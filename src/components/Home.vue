@@ -67,10 +67,11 @@ export default {
         },
         username(){
             return (chat) => {
-                if(chat.from === this.user.id){
+                if(parseInt(chat.from) === this.user.id){
                     return chat.to_user.username
+                }else{
+                    return chat.from_user.username
                 }
-                return chat.from_user.username
             }
         }
     },
