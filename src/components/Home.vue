@@ -21,7 +21,7 @@
             </div>
             <sidebar-modal v-if="showSidebarModal" v-on:hide-sidebar-modal="showSidebarModal = false" v-on:show-contacts-modal="ContactsModalShow"></sidebar-modal>
             <contacts-modal v-if="showContactsModal" v-on:hide-contacts-modal="showContactsModal = false" v-on:show-addcontact-modal="AddContactModalShow" v-on:open-chat="openChat2" @resp-open-chat="respOpenChat"></contacts-modal>
-            <new-contact-modal v-if="showNewContactModal" v-on:hide-new-contact-modal="showNewContactModal = false" v-on:show-contacts-modal="ContactsModalShow"></new-contact-modal>
+            <new-contact-modal v-if="showNewContactModal" v-on:hide-addcontacts-modal="showNewContactModal = false" v-on:show-contacts-modal="ContactsModalShow"></new-contact-modal>
         </div>
     </div>
 </template>
