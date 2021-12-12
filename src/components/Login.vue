@@ -2,7 +2,7 @@
     <div class="bg-blue-600 p-5 pt-20 w-full h-screen">
         <div class="grid justify-items-center mb-10">
             <p class="text-white text-3xl font-bold mb-1">Welcome back, champ!</p>
-            <p class="text-white text-lg">Sign back in to continue chatting with friends</p>
+            <p class="text-white xs:text-sm md:text-lg">Sign back in to continue chatting with friends</p>
         </div>
         <div class=" grid justify-items-center">
             <form class="bg-white p-10 rounded-md h-auto lg:w-5/12 md:w-7/12 xs:w-10/12" @submit.prevent="handleSubmit">
