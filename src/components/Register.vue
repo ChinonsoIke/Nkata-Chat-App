@@ -2,7 +2,7 @@
     <div class="bg-blue-600 xs:px-2 xs:py-5 sm:px-5 sm:py-5 pt-20 w-full grid justify-items-center h-auto">
         <div class="grid justify-items-center">
             <p class="text-white text-3xl font-bold mb-1">So, this is your first time?</p>
-            <p class="text-white xs:text-sm md:text-lg mb-5">Don't be shy. Sign up on Nkata to chat with friends</p>
+            <p class="text-white xs:text-xs md:text-lg mb-5">Don't be shy. Sign up on Nkata to chat with friends</p>
         </div>
         <form class="bg-white p-10 rounded-md h-full lg:w-5/12 md:w-7/12 xs:w-10/12" @submit.prevent="handleSubmit">
             <div class="grid grid-cols-2 justify-items-center mb-6 gap-2">
