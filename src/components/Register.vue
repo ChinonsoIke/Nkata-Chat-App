@@ -2,9 +2,9 @@
     <div class="bg-blue-600 p-5 pt-20 w-full grid justify-items-center h-auto">
         <div class="grid justify-items-center">
             <p class="text-white text-3xl font-bold mb-1">So, this is your first time?</p>
-            <p class="text-white text-lg mb-5">Don't be shy. Sign up on Nkata to chat with friends</p>
+            <p class="text-white xs:text-sm md:text-lg mb-5">Don't be shy. Sign up on Nkata to chat with friends</p>
         </div>
-        <form class="bg-white p-10 rounded-md h-full lg:w-5/12 md:w-7/12 xs:w-9/12" @submit.prevent="handleSubmit">
+        <form class="bg-white p-10 rounded-md h-full lg:w-5/12 md:w-7/12 xs:w-10/12" @submit.prevent="handleSubmit">
             <div class="grid grid-cols-2 justify-items-center mb-6 gap-2">
                 <div class="col-span-1">
                     <label for="firstname" class="text-sm text-blue-600">First Name</label>
@@ -27,7 +27,7 @@
                     <input type="text" id="username" v-model="form.username" class="w-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 p-2 rounded-md" placeholder="sabinus101"/>
                 </div>
                 <div class="col-span-1">
-                    <label for="phone" class="text-sm  text-blue-600">Phone Number</label>
+                    <label for="phone" class="text-sm  text-blue-600">Phone</label>
                     <input type="text" id="phone" v-model="form.phone" class="w-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 p-2 rounded-md" placeholder="08010010010"/>
                 </div>
             </div>

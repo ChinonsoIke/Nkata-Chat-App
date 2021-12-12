@@ -5,7 +5,7 @@
             <p class="text-white text-lg">Sign back in to continue chatting with friends</p>
         </div>
         <div class=" grid justify-items-center">
-            <form class="bg-white p-10 rounded-md h-auto lg:w-5/12 md:w-7/12 xs:w-9/12" @submit.prevent="handleSubmit">
+            <form class="bg-white p-10 rounded-md h-auto lg:w-5/12 md:w-7/12 xs:w-10/12" @submit.prevent="handleSubmit">
                 <div class="mb-6">
                     <label for="email" class="text-sm  text-blue-600">Email</label>
                     <input type="text" id="email" v-model="form.email" class="w-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 p-2 rounded-md" placeholder="ekwueme@hotmail.com"/>
