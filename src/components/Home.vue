@@ -139,7 +139,9 @@ export default {
     },
 
     mounted() {
+        console.log('home mounted')
         if(this.isLoggedIn){
+            console.log('user is logged in')
             this.$Echo.join(`messagesend.${this.user.id}`)
             .here((e) => {
                 console.log('joined')

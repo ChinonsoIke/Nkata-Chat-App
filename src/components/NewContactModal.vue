@@ -2,7 +2,7 @@
     <div class="w-screen h-screen animated fadeIn faster  xs:px-6 md:px-0 fixed  left-0 top-0 flex inset-0 z-50 outline-none focus:outline-none bg-no-repeat bg-center bg-cover">
         <div class="absolute bg-black opacity-30 inset-0 z-0" @click="hideMod"></div>
         <!--content-->
-        <div class="relative max-h-4/6 mx-auto my-auto lg:w-3/12 xs:w-8/12 bg-white shadow-xl">
+        <div class="relative max-h-4/6 mx-auto my-auto lg:w-3/12 xs:w-10/12 sm:w-8/12 bg-white shadow-xl">
             <!--body-->
             <div>
                 <div class="flex flex-row justify-between py-3 px-4">

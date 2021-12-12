@@ -56,10 +56,12 @@ Vue.prototype.$Pusher = require('pusher-js');
 
 Vue.prototype.$Echo = new Echo({
     broadcaster: 'pusher',
-    key: 'nkata001',
-    wsHost: 'nkata.com.ng',
-    wsPort: 6001,
+    key: 'e291b5fb7fc720ac89e5',
+    // wsHost: 'nkata.com.ng',
+    // wsPort: 6001,
+    cluster: 'eu',
     forceTLS: false,
+    authEndpoint: `http://nkata.test/broadcasting/auth`,
     disableStats: false,
     auth: {
         headers: {
@@ -67,13 +69,13 @@ Vue.prototype.$Echo = new Echo({
         },
     },
 
-    enabledTransports: ['ws', 'wss']
+    // enabledTransports: ['ws', 'wss']
 });
 
-Vue.prototype.$Echo.connector.pusher.config.authEndpoint = `https://nkata.com.ng/broadcasting/auth`;
+// Vue.prototype.$Echo.connector.pusher.config.authEndpoint = `http://nkata.test/broadcasting/auth`;
 
 Vue.prototype.$axios= axios;
-axios.defaults.baseURL= 'https://nkata.com.ng/api'
+axios.defaults.baseURL= 'http://nkata.test/api'
 // axios.defaults.headers.common['Authorization'] = `Bearer ${store.getters.UserToken}`
 axios.defaults.withCredentials= true
 
