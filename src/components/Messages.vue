@@ -49,7 +49,7 @@ export default {
         },
         msgClasses(){
             return (from)=>{
-                if(from === this.user.id){
+                if(parseInt(from) === this.user.id){
                 return {
                     "col-start-5": "col-start-5",
                     "col-span-8": "col-span-8",

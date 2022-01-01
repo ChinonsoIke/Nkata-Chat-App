@@ -12,7 +12,7 @@
                 </div>
 
                 <div class="mb-6">
-                    <label for="password" class="text-sm  text-blue-600">Password</label>
+                    <label for="password" class ="text-sm  text-blue-600">Password</label>
                     <input type="password" id="password" v-model="form.password" class="w-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 p-2 rounded-md" placeholder="********"/>
                 </div>
 
