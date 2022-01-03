@@ -80,10 +80,8 @@ export default {
         ...mapActions(['GetChats', 'GetSingle']),
         async openChat(to, from, username) {
             this.chatOpen= false
-            console.log('clicked')
             if(parseInt(to) === this.user.id){
                 this.contactId= from
-                // this.contactUsername= 
             }else{
                 this.contactId= to
             }
@@ -139,17 +137,12 @@ export default {
     },
 
     mounted() {
-        console.log('home mounted')
         if(this.isLoggedIn){
-            console.log('user is logged in')
             this.$Echo.join(`messagesend.${this.user.id}`)
-            .here((e) => {
-                console.log('joined')
-                console.log(e)
+            .here(() => {
+                // console.log('joined')
             })
             .listen('MessageSent', (e) => {
-                console.log(e.message);
-                console.log('loggedWebSocket');
                 this.GetSingle(e.message.from)
                 this.GetChats()
             });

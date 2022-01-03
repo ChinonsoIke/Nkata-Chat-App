@@ -41,7 +41,7 @@ router.beforeEach((to, from, next) => {
 
 axios.interceptors.response.use(undefined, function (error) {
   if (error) {
-    console.log(error)
+    // console.log(error)
     const originalRequest = error.config;
     if (error.response.status === 401 && !originalRequest._retry) {
   

@@ -78,7 +78,7 @@ export default {
                 this.sendMessage({'body':this.messageBody, 'to':this.contactId})
                 this.messageBody= ''
             } catch (error) {
-                console.log(error)
+                // console.log(error)
                 this.errors = error.response.data.errors
             }
         }

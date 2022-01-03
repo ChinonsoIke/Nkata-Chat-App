@@ -74,13 +74,12 @@ export default {
         } catch (error) {
             this.showError = true
             // this.errors = error.response.data.message
-            console.log(error)
+            // console.log(error)
         }
         },
     },
 
     mounted() {
-        console.log('Register mounted')
     }
 }
 </script>

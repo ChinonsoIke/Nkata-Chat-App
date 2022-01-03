@@ -42,21 +42,18 @@ const actions = {
     async GetChats({ commit }){
         axios.get('/chats')
         .then(response => {
-            console.log(response.data)
             commit('SetChats', response.data.data.chats)
         })
     },
     async GetSingle({commit}, id){
         axios.get(`/chats/${id}`)
         .then(response => {
-            console.log(response.data)
             commit('SetSingle', response.data.data.chats)
         })        
     },
     async sendMessage({dispatch}, messageBody) {
         axios.post('/messages/send', messageBody)
-        .then(response => {
-            console.log(response.data)
+        .then(() => {
             dispatch('GetChats')
             dispatch('GetSingle', messageBody.to)
         })
@@ -65,14 +62,13 @@ const actions = {
     async getContacts({commit}){
         axios.get('/contacts')
         .then(response => {
-            console.log(response.data)
             commit('SetContacts', response.data)
         })
     },
     async addContact({dispatch, commit}, formData) {
         axios.post('/contacts/add', formData)
         .then(response => {
-            console.log(response.data)
+            // console.log(response.data)
             commit('AddContactResponse', response.data)
             dispatch('getContacts')
         })
@@ -81,7 +77,6 @@ const actions = {
 };
 const mutations = {
     setUser(state, userData){
-        console.log(userData);
         state.user = userData.data.user
         state.token= userData.data.token
         localStorage.setItem('user', JSON.stringify(userData))

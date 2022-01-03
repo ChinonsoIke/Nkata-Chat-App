@@ -54,13 +54,11 @@ export default {
         ...mapActions(['GetChats']),
         openChat(to, from) {
             this.chatOpen= false
-            console.log('clicked')
             if(to === this.user.id){
                 this.contactId= from
             }else{
                 this.contactId= to
             }
-            // this.$forceUpdate();
             this.chatOpen= true      
         },
         async handleLogout (){
@@ -74,7 +72,6 @@ export default {
     },
 
     mounted() {
-        console.log('Home mounted')
     }
 }
 </script>

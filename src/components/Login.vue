@@ -51,14 +51,12 @@ export default {
                 this.showError = false
             } catch (error) {
                 this.showError = true
-                console.log(error)
-                // this.errors = error.response.data.errors
+                // console.log(error)
             }
         },
     },
 
     mounted() {
-        console.log('Login mounted')
     }
 }
 </script>
