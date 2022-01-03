@@ -35,10 +35,6 @@ export default {
     },
 
     methods:{
-        
-        openChat(id) {
-            // console.log(`clicked ${id}`)
-        },
     },
 }
 </script>
