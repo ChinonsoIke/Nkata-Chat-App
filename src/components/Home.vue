@@ -81,7 +81,7 @@ export default {
         async openChat(to, from, username) {
             this.chatOpen= false
             console.log('clicked')
-            if(to === this.user.id){
+            if(parseInt(to) === this.user.id){
                 this.contactId= from
                 // this.contactUsername= 
             }else{
